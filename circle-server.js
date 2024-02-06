@@ -32,7 +32,7 @@ async function createChallengeForWalletCreation() {
   let response = await client.createUserPinWithWallets({
     userId: "ENTER USERNAME HERE",
     blockchains: ["ETH-SEPOLIA"],
-    userToken: process.env.USER_TOKEN,
+    userToken: process.env.USER_TOKEN_1,
   });
 
   console.log(response.data?.challengeId);
@@ -44,7 +44,7 @@ async function createChallengeForSCAWalletCreation() {
     userId: "ENTER USERNAME HERE",
     blockchains: ["ETH-SEPOLIA"],
     accountType: "SCA",
-    userToken: process.env.USER_TOKEN,
+    userToken: process.env.USER_TOKEN_2,
   });
 
   console.log(response.data?.challengeId);
@@ -54,7 +54,7 @@ async function createChallengeForSCAWalletCreation() {
 async function fetchWallet() {
   let response = await client.getWalletTokenBalance({
     walletId: process.env.SCA_WALLET_ID,
-    userToken: process.env.USER_TOKEN,
+    userToken: process.env.USER_TOKEN_2,
     userId: "ENTER USERNAME HERE",
   });
 
@@ -76,7 +76,7 @@ async function createChallengeForOutboundTransfer() {
         feeLevel: "MEDIUM",
       },
     },
-    userToken: process.env.USER_TOKEN,
+    userToken: process.env.USER_TOKEN_2,
   });
   console.log(response.data?.challengeId);
 }
