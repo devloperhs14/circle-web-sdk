@@ -15,7 +15,7 @@ async function createNewUser() {
     userId: "ENTER USERNAME HERE",
   });
 
-  console.log(`${userId} created successfully`);
+  console.log(response);
 }
 
 // #Step 2 - Create session token
