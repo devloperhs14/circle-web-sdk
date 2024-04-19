@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Welcome to the Second Quest in our campaign, where we will explore the capabilities of Circle Programmable Wallets.
+Here we will explore the capabilities of Circle Programmable Wallets.
 
 ## Pre-requisites
 
@@ -30,6 +30,6 @@ npm install
 
 Now that you're set up, you're ready to start the quest! Follow the steps as outlined in the campaign. Each step contains detailed instructions to guide you through the process
 
-## Preview of Quest
+## Userflow of project
 
 ![image](https://github.com/clement-stackup/circle-bounty/assets/120361535/49b5b8ff-4971-4435-8ccb-f574056c5e55)
